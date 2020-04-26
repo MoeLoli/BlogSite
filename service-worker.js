@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.5007acb6a0a39d50cfef4daf4bf3eebe.js"
+  "/precache-manifest.7d7970bf7b714336872c94d97e9e88a2.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "thi-lite"});
