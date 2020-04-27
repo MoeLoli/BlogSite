@@ -60,7 +60,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/tag.f2908d12.css"
   },
   {
-    "revision": "21b911876af9d2bf01320116cb38316e",
+    "revision": "6f542084cb08ca9165cb5a5b096774fe",
     "url": "/index.html"
   },
   {
