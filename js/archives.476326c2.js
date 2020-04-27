@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["archives"],{faf2:function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div")},c=[],l=t("2877"),r={},s=Object(l["a"])(r,a,c,!1,null,null,null);n["default"]=s.exports}}]);
