@@ -24,7 +24,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/assets/fac0669c.svg"
   },
   {
-    "revision": "970acd7f40284809f9dc",
+    "revision": "3012ed2184997c2b1860",
     "url": "/css/app.b9c2ffa9.css"
   },
   {
@@ -60,12 +60,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/tag.f2908d12.css"
   },
   {
-    "revision": "0cf7d9e9eef14d103a3f5a1d10d820e5",
+    "revision": "07dbf68a11bc5e5607665132cc704924",
     "url": "/index.html"
   },
   {
-    "revision": "970acd7f40284809f9dc",
-    "url": "/js/app.2030cef3.js"
+    "revision": "3012ed2184997c2b1860",
+    "url": "/js/app.c6e324b2.js"
   },
   {
     "revision": "c04bbd5b38277401810c",
