@@ -1,4 +1,4 @@
-importScripts("https://cdn.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js", "/precache-manifest.b81fd155fc30a273a006b75e2e48a307.js");
+importScripts("https://cdn.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js", "/precache-manifest.b24becc2f829f13edc721f3a66286511.js");
 
 /*
  * @Author: Jin
