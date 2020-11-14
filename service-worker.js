@@ -4,7 +4,7 @@ importScripts("https://cdn.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js", "/p
  * @Author: Jin
  * @Date: 2020-09-02 16:57:52
  * @LastEditors: Jin
- * @LastEditTime: 2020-11-14 12:42:08
+ * @LastEditTime: 2020-11-14 12:53:03
  * @FilePath: /Stack-Vue-Hexo/src/service-worker.js
  */
 workbox.core.setCacheNameDetails({
@@ -29,7 +29,7 @@ workbox.routing.registerRoute(
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'fonts-cache',
         plugins: [
-            new workbox.expiration.Plugin({
+            new workbox.expiration.ExpirationPlugin({
                 maxEntries: 60,
                 maxAgeSeconds: 30 * 24 * 60 * 60
             })
@@ -41,7 +41,7 @@ workbox.routing.registerRoute(
     new workbox.strategies.CacheFirst({
         cacheName: 'google-fonts-cache',
         plugins: [
-            new workbox.expiration.Plugin({
+            new workbox.expiration.ExpirationPlugin({
                 maxEntries: 1000,
                 maxAgeSeconds: 60 * 60 * 24 * 30
             })
@@ -53,7 +53,7 @@ workbox.routing.registerRoute(
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'cdn-cache',
         plugins: [
-            new workbox.expiration.Plugin({
+            new workbox.expiration.ExpirationPlugin({
                 maxEntries: 60,
                 maxAgeSeconds: 30 * 24 * 60 * 60
             })
@@ -68,7 +68,7 @@ workbox.routing.registerRoute(
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'images-cache',
         plugins: [
-            new workbox.expiration.Plugin({
+            new workbox.expiration.ExpirationPlugin({
                 maxEntries: 60,
                 maxAgeSeconds: 30 * 24 * 60 * 60
             })
