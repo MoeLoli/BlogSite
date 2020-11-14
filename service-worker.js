@@ -4,7 +4,7 @@ importScripts("https://cdn.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js", "/p
  * @Author: Jin
  * @Date: 2020-09-02 16:57:52
  * @LastEditors: Jin
- * @LastEditTime: 2020-11-14 12:36:03
+ * @LastEditTime: 2020-11-14 12:42:08
  * @FilePath: /Stack-Vue-Hexo/src/service-worker.js
  */
 workbox.core.setCacheNameDetails({
@@ -14,19 +14,19 @@ workbox.core.setCacheNameDetails({
 
 workbox.routing.registerRoute(
     /.*\.css$/,
-    new workbox.strategies.staleWhileRevalidate({
+    new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'css-cache'
     })
 );
 workbox.routing.registerRoute(
     /.*\.js$/,
-    new workbox.strategies.staleWhileRevalidate({
+    new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'js-cache'
     })
 );
 workbox.routing.registerRoute(
     /\.(?:eot|ttf|woff|woff2)$/,
-    new workbox.strategies.staleWhileRevalidate({
+    new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'fonts-cache',
         plugins: [
             new workbox.expiration.Plugin({
@@ -50,7 +50,7 @@ workbox.routing.registerRoute(
 );
 workbox.routing.registerRoute(
     /^https:\/\/static\.misaka\.xin\/.*/,
-    new workbox.strategies.staleWhileRevalidate({
+    new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'cdn-cache',
         plugins: [
             new workbox.expiration.Plugin({
@@ -65,7 +65,7 @@ workbox.routing.registerRoute(
 );
 workbox.routing.registerRoute(
     /\.(?:png|gif|jpg|jpeg|svg|webp)$/,
-    new workbox.strategies.staleWhileRevalidate({
+    new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'images-cache',
         plugins: [
             new workbox.expiration.Plugin({
@@ -77,19 +77,19 @@ workbox.routing.registerRoute(
 );
 workbox.routing.registerRoute(
     /\/api\/.*/,
-    new workbox.strategies.networkFirst({
+    new workbox.strategies.NetworkFirst({
         cacheName: 'api-cache'
     })
 );
 workbox.routing.registerRoute(
     /\/comments\/.*/,
-    new workbox.strategies.networkFirst({
+    new workbox.strategies.NetworkFirst({
         cacheName: 'comment-api-cache'
     })
 );
 workbox.routing.registerRoute(
     /\/.*/,
-    new workbox.strategies.staleWhileRevalidate({
+    new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'other-cache',
         fetchOptions: {
             credentials: 'include'
