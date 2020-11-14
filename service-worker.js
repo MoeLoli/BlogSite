@@ -4,11 +4,9 @@ importScripts("https://cdn.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js", "/p
  * @Author: Jin
  * @Date: 2020-09-02 16:57:52
  * @LastEditors: Jin
- * @LastEditTime: 2020-11-14 12:36:19
- * @FilePath: /Stack-Vue-Hexo/Users/sora/Web/Hexo/themes/stack/source/service-worker.js
+ * @LastEditTime: 2020-11-14 12:36:03
+ * @FilePath: /Stack-Vue-Hexo/src/service-worker.js
  */
-console.log(workbox);
-
 workbox.core.setCacheNameDetails({
     prefix: 'Stack',
     suffix: 'v1.0.0'
