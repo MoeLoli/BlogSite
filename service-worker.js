@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.b81fd155fc30a273a006b75e2e48a307.js");
+importScripts("./src/workbox-sw.js", "/precache-manifest.b81fd155fc30a273a006b75e2e48a307.js");
 
 /*
  * @Author: Jin
