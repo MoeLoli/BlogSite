@@ -1,11 +1,11 @@
-importScripts("https://cdn.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js", "/precache-manifest.e281153220fbdc573d71b29eb0c3b036.js");
+importScripts("https://cdn.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js", "/precache-manifest.4494c3e205b87c617425cac2cdce84aa.js");
 
 /*
  * @Author: Jin
  * @Date: 2020-09-02 16:57:52
  * @LastEditors: Jin
- * @LastEditTime: 2020-11-14 12:53:03
- * @FilePath: /Stack-Vue-Hexo/src/service-worker.js
+ * @LastEditTime: 2021-01-20 20:31:27
+ * @FilePath: /Stack-Vue-Hexo.bak/src/service-worker.js
  */
 workbox.core.setCacheNameDetails({
     prefix: 'Stack',
@@ -64,7 +64,7 @@ workbox.routing.registerRoute(
     })
 );
 workbox.routing.registerRoute(
-    /\.(?:png|gif|jpg|jpeg|svg|webp)$/,
+    /(\.(?:png|gif|jpg|jpeg|svg|webp))|(^https:\/\/gravatar\.aim\.moe\/.*)$/,
     new workbox.strategies.StaleWhileRevalidate({
         cacheName: 'images-cache',
         plugins: [
