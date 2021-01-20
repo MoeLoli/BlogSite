@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bbdece336533ccab5a65",
+    "revision": "8ab5f24ef55405f33c6d",
     "url": "/css/app.a04608f0.css"
   },
   {
@@ -248,7 +248,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fonts/KaTeX_Typewriter-Regular.641339e2.woff2"
   },
   {
-    "revision": "f2c36332358a912a00945c060b0f989b",
+    "revision": "b2739ddb340895615d030910b00be3d0",
     "url": "/index.html"
   },
   {
@@ -260,8 +260,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/Archives~archive~home~links~single.8f8020d4.js"
   },
   {
-    "revision": "bbdece336533ccab5a65",
-    "url": "/js/app.0be5baab.js"
+    "revision": "8ab5f24ef55405f33c6d",
+    "url": "/js/app.2880e3a2.js"
   },
   {
     "revision": "8b26fa7ee567e1a72113",
