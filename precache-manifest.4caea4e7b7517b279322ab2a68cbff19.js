@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "85236057fd31ac0c620d",
+    "revision": "4c3dc25262867e1e5bf3",
     "url": "/css/app.a04608f0.css"
   },
   {
@@ -248,7 +248,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fonts/KaTeX_Typewriter-Regular.641339e2.woff2"
   },
   {
-    "revision": "33254321b527802f79239b962b94f84a",
+    "revision": "d1885e44a1a7602966e705a08e7b6a04",
     "url": "/index.html"
   },
   {
@@ -260,8 +260,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/Archives~archive~home~links~single.8f8020d4.js"
   },
   {
-    "revision": "85236057fd31ac0c620d",
-    "url": "/js/app.45b8e7c2.js"
+    "revision": "4c3dc25262867e1e5bf3",
+    "url": "/js/app.e66097f1.js"
   },
   {
     "revision": "dbb24264f383cb3e7f3a",
@@ -300,8 +300,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/single.68548a7e.js"
   },
   {
-    "revision": "b856f6998405a2147bf1",
-    "url": "/js/term.2b697d98.js"
+    "revision": "857dc3dd0ac130cf7557",
+    "url": "/js/term.a47380be.js"
   },
   {
     "revision": "4bccd950b103ed00937b11590e029708",
