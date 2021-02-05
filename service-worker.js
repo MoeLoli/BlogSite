@@ -4,7 +4,7 @@ importScripts("https://cdn.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js", "/p
  * @Author: Jin
  * @Date: 2020-09-02 16:57:52
  * @LastEditors: Jin
- * @LastEditTime: 2021-02-05 13:54:36
+ * @LastEditTime: 2021-02-05 14:04:33
  * @FilePath: /hexo-theme-stack/src/service-worker.js
  */
 workbox.core.setCacheNameDetails({
@@ -76,18 +76,18 @@ workbox.routing.registerRoute(
     })
 );
 workbox.routing.registerRoute(
-    /\/api\/.*/,
+    /\/api\/.*\.json$/,
     new workbox.strategies.NetworkFirst({
         cacheName: 'api-cache'
     })
 );
-workbox.routing.registerRoute(
-    /\/.*/,
-    new workbox.strategies.StaleWhileRevalidate({
-        cacheName: 'other-cache',
-        fetchOptions: {
-            credentials: 'include'
-        }
-    })
-);
+// workbox.routing.registerRoute(
+//    /\/.*/,
+//    new workbox.strategies.StaleWhileRevalidate({
+//        cacheName: 'other-cache',
+//        fetchOptions: {
+//            credentials: 'include'
+//        }
+//    })
+// );
 
