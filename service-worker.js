@@ -1,11 +1,11 @@
-importScripts("https://cdn.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js", "/precache-manifest.8da4fa88b3070679181fabb00d200358.js");
+importScripts("https://cdn.jsdelivr.net/npm/workbox-sw/build/workbox-sw.js", "/precache-manifest.50f946da74fbb2832e706ee3530b0a63.js");
 
 /*
  * @Author: Jin
  * @Date: 2020-09-02 16:57:52
  * @LastEditors: Jin
- * @LastEditTime: 2021-01-20 20:31:27
- * @FilePath: /Stack-Vue-Hexo.bak/src/service-worker.js
+ * @LastEditTime: 2021-02-05 13:41:00
+ * @FilePath: /hexo-theme-stack/src/service-worker.js
  */
 workbox.core.setCacheNameDetails({
     prefix: 'Stack',
@@ -75,18 +75,12 @@ workbox.routing.registerRoute(
         ]
     })
 );
-workbox.routing.registerRoute(
-    /\/api\/.*/,
-    new workbox.strategies.NetworkFirst({
-        cacheName: 'api-cache'
-    })
-);
-workbox.routing.registerRoute(
-    /\/comments\/.*/,
-    new workbox.strategies.NetworkFirst({
-        cacheName: 'comment-api-cache'
-    })
-);
+// workbox.routing.registerRoute(
+//    /\/api\/.*/,
+//    new workbox.strategies.NetworkFirst({
+//        cacheName: 'api-cache'
+//    })
+// );
 workbox.routing.registerRoute(
     /\/.*/,
     new workbox.strategies.StaleWhileRevalidate({
