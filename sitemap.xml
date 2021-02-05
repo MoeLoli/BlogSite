@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jcl.moe/categories/index.html</loc>
+    
+    <lastmod>2021-02-05T07:11:14.014Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jcl.moe/2021/01/30/use-docker-on-apple-silicon/</loc>
     
-    <lastmod>2021-02-05T05:50:59.078Z</lastmod>
+    <lastmod>2021-02-05T07:09:46.965Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jcl.moe/2020/01/21/hello-world/</loc>
+    
+    <lastmod>2021-02-05T06:59:10.523Z</lastmod>
     
   </url>
   
@@ -26,20 +40,6 @@
     <loc>https://jcl.moe/Links/index.html</loc>
     
     <lastmod>2021-01-20T12:06:47.271Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jcl.moe/categories/index.html</loc>
-    
-    <lastmod>2021-01-20T12:06:47.271Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jcl.moe/2020/01/21/hello-world/</loc>
-    
-    <lastmod>2021-01-20T12:06:47.270Z</lastmod>
     
   </url>
   
